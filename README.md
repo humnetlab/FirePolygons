@@ -30,6 +30,23 @@ Contents
 ---------------------
 
 
+<br/>
+<p align="center">
+  <img src="figures/methodology.jpg" width="900">
+  <br><i>Diagram of proposed methodology using fire spread simulations and hydrology-inspired modeling of fire potential polygons to build fire potential networks for decision support.</i>
+</p>
+
+Highlights
+---------------------
+* Fire potential polygons are an innovative approach for wildfire risk management.
+* Automatically generated polygons using fire spread simulations and hydrology-based basin delineation tools.
+* Constructed networks of polygons that prioritize suppression efforts and enhance decision-making.
+* Evaluated our method in real-time initial attack operations for two key wildfires in Spain.
+
+Contents
+---------------------
+
+
 Citation
 ---------------------
 **Please cite the journal paper if this code is useful and helpful for your research.**
