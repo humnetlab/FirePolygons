@@ -1,0 +1,66 @@
+------ Command line values ------
+InFolder: /Users/minho/Documents/GitHub/firepolygons/data/toy_example 
+OutFolder: /Users/minho/Documents/GitHub/firepolygons/results/toy_example 
+WeatherOpt: rows 
+OutMessages: 1 
+OutFlameLength: 1 
+OutIntensity: 1 
+OutROS: 1 
+Ignitions: 1 
+OutputGrids: 1 
+FinalGrid: 1 
+CrownROS: 1 
+TotalYears: 1 
+TotalSims: 1 
+Simulator: S 
+FirePeriodLength: 1 
+scenario: 3 
+ROSThreshold: 0.0 
+HFactor: 1.0 
+FFactor: 1.0 
+BFactor: 1.0 
+EFactor: 1.0 
+ROS-CV: 0.0 
+seed: 123 
+nthreads: 8 
+------------------Forest Data ----------------------
+
+------------------Detailed Data ----------------------
+
+
+------ Read DataFrames: Forest and Weather ------
+Forest DataFrame from instance /Users/minho/Documents/GitHub/firepolygons/data/toy_example/Data.csv
+Number of cells: 2500
+
+Weather DataFrame from instance /Users/minho/Documents/GitHub/firepolygons/data/toy_example/Weather.csv
+Weather Periods: 5
+ ﻿Instance  datetime  WS  WD  FireScenario 
+ Sim  8/9/24 14:00  10  90  3 
+ Sim  8/9/24 15:00  10  90  3 
+ Sim  8/9/24 16:00  10  90  3 
+ Sim  8/9/24 17:00  10  90  3 
+ Sim  8/9/24 18:00  10  90  3 
+
+We have specific ignition points:
+Ignition points from file /Users/minho/Documents/GitHub/firepolygons/data/toy_example/Ignitions.csv
+ Year  NCell 
+ 2024  1265 
+Serial version execution
+Serial version execution
+Serial version executionSerial version execution
+Serial version execution
+
+Serial version execution
+Serial version execution
+Serial version execution
+--------------------- Reseting environment -----------------------
+Weather Option:rows
+Weather Option random check:0
+Weather Option rows check:1
+
+Selected ignition point for Year 1, sim 1: 1265
+----------------------------- Results -----------------------------
+Total Available Cells:    2146 - % of the Forest: 85.84%
+Total Burnt Cells:        354 - % of the Forest: 14.16%
+Total Non-Burnable Cells: 0 - % of the Forest: 0%
+Total Firebreak Cells: 0 - % of the Forest: 0%
