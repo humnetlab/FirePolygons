@@ -15,7 +15,7 @@ We validate our approach on two wildfire case studies in Catalonia (Spain) durin
 
 # Highlights⚡
 * Fire potential polygons are an innovative approach for **wildfire risk management**🔥.
-* Automatically generated polygons using **fire spread simulations**🔥 and **hydrology-based basin delineation**💧 tools.
+* Generated polygons using **fire spread simulations**🔥 and **hydrology-based basin delineation**💧 tools.
 * Constructed networks of polygons that **prioritize suppression efforts**🚒 and **enhance decision-making**💡.
 * Evaluated our method in **real-time initial attack operations**🧑‍🚒 for two key wildfires in Spain.
 
@@ -35,8 +35,7 @@ We validate our approach on two wildfire case studies in Catalonia (Spain) durin
 
 # Notebooks
 <a id="Notebooks"></a>
-- [toy_example.ipynb](notebooks/toy_example.ipynb): Example of 100 x 100 cell grid of homogeneous fuels used to generate fire potential polygons
-
+- [toy_example.ipynb](notebooks/toy_example.ipynb): Example of 100 x 100 cell grid of homogeneous fuels used to generate fire potential polygons and networks for decision-making.
 
 # Code Implementation
 <a id="Imeplementation"></a>
