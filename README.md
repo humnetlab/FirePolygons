@@ -1,5 +1,5 @@
 # Modeling fire potential polygon networks for fire suppression decision-making using fire spread simulations and hydrology tools 🔥
-Collaborators: [Minho Kim](https://minho.me), [Marc Castellnou](https://www.researchgate.net/profile/Marc-Castellnou), [Marta C. Gonzalez](https://scholar.google.com/citations?user=YAGjro8AAAAJ&hl=en)
+Authors: [Minho Kim](https://minho.me), [Marc Castellnou](https://www.researchgate.net/profile/Marc-Castellnou), [Marta C. Gonzalez](https://scholar.google.com/citations?user=YAGjro8AAAAJ&hl=en)
 
 Abstract
 ---------------------
