@@ -25,6 +25,18 @@ Contents
 
 
 
+Requirements
+---------------------
+- python
+- matplotlib
+- pandas
+- geopandas
+- rasterio
+- shapely
+- networkx
+- pysheds
+- pyflwdir
+
 Citation
 ---------------------
 **Please cite the journal paper if this code is useful and helpful for your research.**
