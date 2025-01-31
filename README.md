@@ -28,3 +28,8 @@ Contents
 Citation
 ---------------------
 **Please cite the journal paper if this code is useful and helpful for your research.**
+
+    @article{kim2025,
+      title={Modeling Fire Potential Networks for Suppression Strategies Using Fire Spread Simulations and Hydrological Tools},
+      author={Kim, Minho and Castellnou, Marc and Gonzalez, C. Marta},
+      }
