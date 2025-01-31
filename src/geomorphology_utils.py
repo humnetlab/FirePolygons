@@ -1,7 +1,7 @@
 # Geomorphometrics and watershed geometry
 # Basin delineation algorithms from PySheds and PyFlwDir
 
-import os, glob, rasterio, math
+import os, rasterio, math
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,12 +12,8 @@ import geopandas as gpd
 from shapely.geometry import Polygon, shape
 from rasterio.features import shapes
 from shapely.ops import unary_union, transform
-from scipy.ndimage import gaussian_filter, convolve
-from functools import partial
-import pyproj
 
 import pyflwdir
-from pyflwdir import FlwdirRaster
 
 # Globals
 CRS_LATLON = 4326
@@ -75,67 +71,6 @@ def vectorize(data, nodata, transform, crs=None, name="value"):
     gdf = gpd.GeoDataFrame.from_features(feats, crs=crs)
     gdf[name] = gdf[name].astype(data.dtype)
     return gdf
-
-def window_annulus(r_inner, r_outer):
-    
-    """Create a binary mask for an annulus 
-    with inner radius r_inner and outer 
-    radius r_outer.
-    """
-
-    y, x = np.ogrid[-r_outer:r_outer+1, -r_outer:r_outer+1]
-    distance = np.sqrt(x**2 + y**2)
-    mask = (distance <= r_outer) & (distance > r_inner)
-
-    return mask.astype(float)
-
-def window_default(r):
-    
-    # Set window
-    window = np.ones((2 * r + 1, 2 * r + 1))
-    
-    # Window radius
-    r_y, r_x = win.shape[0] // 2, window.shape[1] // 2
-    window[r_y, r_x] = 0  # remove central cell
-
-    return win
-
-def window_custom(win):
-    
-    '''Source: https://landscapearchaeology.org/2021/python-tpi/'''
-
-    # Example as default
-    win = np.array([[0, 1, 1, 1, 0],
-                    [1, 1, 1, 1, 1],
-                    [1, 1, 0, 1, 1],
-                    [1, 1, 1, 1, 1],
-                    [0, 1, 1, 1, 0] 
-                    ])
-
-    return win
-
-
-def compute_tpi(elev, r_inner=50, r_outer=100, custom=None):
-    
-    if r_inner>0:
-        # Create the annulus mask
-        window = window_annulus(r_inner, r_outer)
-    else:
-        window = window_default(r_outer)
-
-    if custom:
-        window = custom
-
-    # Compute the sum of the neighbors using convolution
-    mx_temp = convolve(elev, window, mode='reflect')
-    
-    # Compute the count of the neighbors using convolution
-    mx_count = convolve(np.ones_like(elev), window, mode='reflect')
-    
-    # Compute TPI
-    out = elev - (mx_temp / mx_count)
-    
-    return out
 
 
 class Basin:
