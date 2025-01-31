@@ -37,6 +37,8 @@ Contents
 
 # Notebooks
 <a id="Notebooks"></a>
+- [toy_example.ipynb](notebooks/toy_example.ipynb): Example of 100 x 100 cell grid of homogeneous fuels used to generate fire potential polygons
+
 
 # Code Implementation
 <a id="Imeplementation"></a>
