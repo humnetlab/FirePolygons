@@ -19,7 +19,7 @@ We validate our approach on two wildfire case studies in Catalonia (Spain) durin
 * Constructed networks of polygons that **prioritize suppression efforts**🚒 and **enhance decision-making**💡.
 * Evaluated our method in **real-time initial attack operations**🧑‍🚒 for two key wildfires in Spain.
 
-# But how do the polygons get modeled using basin delineation from "hydrology" principles?
+## But how do the polygons get modeled using basin delineation from "hydrology" principles?
 Since fire does not spread on the landscape like water flowing in a drainage basin, we model fire behavior using the elapsed time (i.e., arrival of time) from Cell2Fire simulations. Time is a continuous quantity which
 <br/>
 <p align="center">
