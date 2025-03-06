@@ -69,8 +69,10 @@ Since fire does not spread on the landscape like water flowing in a drainage bas
 - rasterio
 - shapely
 - networkx
-- pysheds
-- pyflwdir
+- [pysheds](https://github.com/mdbartos/pysheds)
+- [pyflwdir](https://github.com/Deltares/pyflwdir)
+
+*Note: We use PySheds to compute Flow Direction using the D8 algorithm (Functions: `flowdir` --> `_d8_flowdir` and `_d8_flowdir_numba`). These functions are hard-coded into [src/geomorphology_utils.py](src/geomorphology_utils.py). We also use PyFlwDir to create a Flow Direction raster object to run sub-basin delineation (Function: `subbasins_pfafstetter`). We include scripts from PyFlwDir (version 0.5.8) in the repository for the user's convenience.
 
 # Acknowledgements
 The authors acknowledge the support of [C3.ai](https://c3.ai) through the grant Multiscale analysis for Improved Risk Assessment of Wildfires facilitated by Data and Computation [(Link)](https://c3.ai/c3-ai-digital-transformation-institute-announces-ai-for-energy-and-climate-security-grantees/). The authors acknowledge the support of the [Catalan Fire Service](https://ajuntament.barcelona.cat/bombers/en) for accommodation and access to the wildfires during suppression operations. The authors also acknowledge the support of the [Pau Costa Foundation](https://www.paucostafoundation.org/en/).
