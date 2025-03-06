@@ -1,4 +1,4 @@
-# Modeling fire potential polygon networks for fire suppression 🔥
+# Modeling Fire Potential Networks for Fire Suppression 🔥
 Authors: [Minho Kim](https://minho.me), [Marc Castellnou](https://www.researchgate.net/profile/Marc-Castellnou), [Marta C. Gonzalez](https://scholar.google.com/citations?user=YAGjro8AAAAJ&hl=en)
 ---------------------
 
@@ -20,7 +20,8 @@ We validate our approach on two wildfire case studies in Catalonia (Spain) durin
 * Evaluated our method in **real-time initial attack operations**🧑‍🚒 for two key wildfires in Spain.
 
 ### But how do the polygons get modeled using basin delineation from "hydrology" principles?
-Since fire does not spread on the landscape like water flowing in a drainage basin, we model fire behavior using the elapsed time (i.e., arrival of time) from Cell2Fire simulations. Time is a continuous quantity which
+Since fire does not spread on the landscape like water flowing in a drainage basin, we model fire behavior using the elapsed time (i.e., arrival of time) from Cell2Fire simulations. Time is a continuous quantity which can be measured cumulatively beginning from the time of ignition. 
+
 <br/>
 <p align="center">
   <img src="figures/basins.jpeg" width="900">
@@ -83,6 +84,6 @@ Citation
 **Please cite the journal paper if this code is useful and helpful for your research.**
 
     @article{kim2025,
-      title={Modeling Fire Potential Networks for Suppression Strategies Using Fire Spread Simulations and Hydrological Tools},
+      title={Modeling Fire Potential Networks for Suppression Strategies},
       author={Kim, Minho and Castellnou, Marc and Gonzalez, C. Marta},
       }
